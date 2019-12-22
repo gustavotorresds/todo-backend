@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Goal(models.Model):
 	title = models.CharField(max_length=100)
+	color = models.CharField(max_length=8, default='#FFFFFF')
 
 	def __str__(self):
 		return self.title
